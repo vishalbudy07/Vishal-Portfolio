@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#3b82f6" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Vishal Gupta - Frontend & Full-Stack Developer Portfolio</title>
+    <meta name="title" content="Vishal Gupta - Frontend & Full-Stack Developer Portfolio" />
+    <meta name="description" content="Aspiring Frontend & Full-Stack Developer passionate about building responsive and scalable web applications. View my projects, skills, and experience." />
+    <meta name="keywords" content="Vishal Gupta, Frontend Developer, Full-Stack Developer, React Developer, Web Developer, Portfolio, JavaScript, TypeScript, Node.js, MongoDB" />
+    <meta name="author" content="Vishal Gupta" />
+    <meta name="robots" content="index, follow" />
+
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme = (saved === 'light' || saved === 'dark') ? saved : (prefersDark ? 'dark' : 'light');
+          var root = document.documentElement;
+          root.classList.remove('light', 'dark');
+          root.classList.add(theme);
+        } catch (e) {}
+      })();
+    </script>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vishalgupta.dev/" />
+    <meta property="og:title" content="Vishal Gupta - Frontend & Full-Stack Developer Portfolio" />
+    <meta property="og:description" content="Aspiring Frontend & Full-Stack Developer passionate about building responsive and scalable web applications. View my projects, skills, and experience." />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.jpg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://vishalgupta.dev/" />
+    <meta property="twitter:title" content="Vishal Gupta - Frontend & Full-Stack Developer Portfolio" />
+    <meta property="twitter:description" content="Aspiring Frontend & Full-Stack Developer passionate about building responsive and scalable web applications. View my projects, skills, and experience." />
+    <meta property="twitter:image" content="%PUBLIC_URL%/og-image.jpg" />
+    
+    <!-- Additional Meta Tags -->
+    <meta name="application-name" content="Vishal Gupta Portfolio" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Vishal Gupta Portfolio" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Vishal Gupta",
+      "jobTitle": "Frontend & Full-Stack Developer",
+      "description": "Aspiring Frontend & Full-Stack Developer passionate about building responsive and scalable web applications",
+      "url": "https://vishalgupta.dev",
+      "sameAs": [
+        "https://github.com/vishalbudy07",
+        "https://linkedin.com/in/vishalgupta",
+        "https://leetcode.com/vishalgupta"
+      ],
+      "knowsAbout": [
+        "React.js",
+        "JavaScript",
+        "TypeScript",
+        "Node.js",
+        "MongoDB",
+        "MySQL",
+        "Java",
+        "HTML5",
+        "CSS3"
+      ],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Software Developer",
+        "occupationLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mumbai",
+            "addressRegion": "Maharashtra",
+            "addressCountry": "India"
+          }
+        }
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
