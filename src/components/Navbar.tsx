@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
             className="flex items-center gap-2"
           >
             <img
-              src="/images/vishal1.png"
+              src={`${process.env.PUBLIC_URL}/images/vishal1.png`}
               alt="Vishal Gupta"
               className="w-10 h-10 rounded-full object-cover border-2 border-primary-500 shadow"
             />

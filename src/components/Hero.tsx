@@ -269,7 +269,7 @@ const Hero: React.FC = () => {
                   }}
                 />
                 <img
-                  src="/images/vishal1.png"
+                  src={`${process.env.PUBLIC_URL}/images/vishal1.png`}
                   alt="Vishal Gupta"
                   className="object-cover w-full h-full rounded-2xl relative z-20"
                   style={{ aspectRatio: '4/5' }}
