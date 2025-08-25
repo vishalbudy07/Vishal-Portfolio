@@ -86,25 +86,29 @@ const About: React.FC = () => {
     },
   ];
 
+  // Added percentages/CGPA to education
   const education = [
     {
       year: '2022 - Present',
-      degree: 'Bachelor of Technology',
+      degree: 'Bachelor of Technology ',
       institution: 'Computer Science & Engineering',
       university: 'Galgotias University',
       description: 'Specialized in software development and computer systems',
+      score: '7.73 CGPA (till now)',
     },
     {
       year: '2021 - 2022',
       degree: 'Class 12th Student',
       institution: 'Saraswati Shishu Mandir',
-      description: 'Pursuing Class 12th in Science stream with a focus on mathematics and computer science.',
+      description: 'Pursued Class 12th in Science stream with a focus on mathematics and computer science.',
+      score: '78.6%',
     },
     {
       year: '2018 - 2020',
       degree: 'Class 10th Student',
       institution: 'Saraswati Shishu Mandir',
       description: 'Completed Class 10th with a strong interest in science and technology.',
+      score: '89.8%',
     },
   ];
 
@@ -246,16 +250,25 @@ const About: React.FC = () => {
                       >
                         {edu.institution}
                       </p>
-                      <p
-                        className={`mb-1 break-words ${style.universityText}`}
-                      >
-                        {edu.university}
-                      </p>
+                      {/* Only show university if present */}
+                      {edu.university && (
+                        <p
+                          className={`mb-1 break-words ${style.universityText}`}
+                        >
+                          {edu.university}
+                        </p>
+                      )}
                       <p
                         className={`text-sm break-words ${style.descText}`}
                       >
                         {edu.description}
                       </p>
+                      {/* Show percentage/CGPA if present */}
+                      {edu.score && (
+                        <p className="text-xs font-semibold mt-1 text-gray-700 dark:text-gray-200">
+                          {edu.score}
+                        </p>
+                      )}
                     </div>
                   </div>
                 </motion.div>

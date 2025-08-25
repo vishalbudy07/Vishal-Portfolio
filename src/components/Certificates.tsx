@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Award, Trophy, Star, ExternalLink, Download, Code, Target, TrendingUp } from 'lucide-react';
+import { Award, Trophy, Star, Download, Code, Target, TrendingUp } from 'lucide-react';
 
 // Custom hook to detect dark mode using Tailwind's 'dark' class on <html>
 function useIsDarkMode() {
@@ -256,15 +256,7 @@ const Certificates: React.FC = () => {
                         <Download size={16} />
                         Download
                       </a>
-                      <a
-                        href={cert.verifyUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`flex-1 flex items-center justify-center gap-2 px-3 py-2 ${isDarkMode ? 'bg-gray-700 text-gray-200 hover:bg-gray-600' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'} rounded-lg transition-colors duration-300 text-sm`}
-                      >
-                        <ExternalLink size={16} />
-                        Verify
-                      </a>
+                      {/* Verify button removed as per instructions */}
                     </div>
                   </div>
                 </motion.div>
@@ -274,7 +266,7 @@ const Certificates: React.FC = () => {
         </motion.div>
 
         {/* Achievements */}
-        <motion.div
+        <motion.div id="achievements"
           variants={containerVariants}
           className="mb-12"
         >
